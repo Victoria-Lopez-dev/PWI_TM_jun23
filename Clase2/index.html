@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es"><!-- atributo lang , charset , name -->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 2</title>
+    </head>
+    <body>
+        <!-- etiquetas semanticas-->
+        <!-- titulares -->
+        <h1>
+            Clase 2: Etiquetas HTML
+        </h1><!-- unico en todo el HTML como buena practica, ya que es el mas importante -->
+        
+        <h2 class="titulo">Seccion1</h2>
+        <!-- <br/>
+        <br/> OJO con el <br>; NO utilizar el br para generar espacios entre etiquetas-->
+        <h2 class="titulo">Seccion2</h2>
+        <h3 class="titulo">Una seccion dentro del h2</h3>
+
+        <!-- <h3>,<h4>,<h5>,<h6>...-->
+
+
+        <p id="texto1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia laudantium ullam eos sint ipsa perspiciatis deleniti odit cum, aliquid voluptatem unde ratione a pariatur. Ex iusto accusantium ipsam aliquam!
+        </p>
+        <p>
+            Otro parrafo.....<br/>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus itaque aperiam ad magni incidunt saepe ab tempore esse corporis quaerat voluptates ducimus optio laboriosam voluptatibus accusantium, nam, dolorum minus amet.
+        </p>
+
+
+        <!-- listas-->
+        <h2 title="listas..">Listas</h2>
+        <!-- listas organizadas(ol -> organize list) -->
+        <ol>
+            <li>Item </li><!-- li: list item (item de lista)-->
+            <li>Otro item</li>
+            <li>Otro item mas</li>
+        </ol>
+
+        <!-- listas desorganizadas (ul -> unorganize list)-->
+        
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+
+        </ul>
+
+        <!-- tabla <tb> <tr> <th><tbody> -->
+
+        <!-- funcionales -->
+        <a href="https://www.google.com/" target="_blank"> Ir a google</a><!-- anclas - anchor ; necesita del atributo href para saber a donde tiene que linkear-->
+        
+
+        <a href="./paginaSecundaria.html">Ir a la pagina secundaria</a>
+
+
+    <a href="#texto1">Ir al primer texto</a><!-- con el # entiende que queremos ir a la ubicacion del elemento con ese id-->
+
+            <a href="https://www.google.com/" target="_blank">
+                <img src="./assets/logo_superior.jpg" alt="imagen logo"/>
+            </a>
+
+    <button >Click</button>
+
+
+    <img src="./assets/mesa.jpg" alt="mesa ratona"/>
+    <img src="./assets/paisaje.jpeg" alt="paisaje de montaña"/>
+
+    <video  controls poster="./assets/mesa.jpg">
+        <!-- aternativas de  formato de video , para que elija cual de estas opciones puede reproducir-->
+       <source src="./assets/video/historia-Comp.ogv" type="video/ogv"/>
+       <source src="./assets/video/historia-Comp.mp4" type="video/mp4"/>
+    </video>
+   <!-- para audio se utilizan las mismas etiquetas que video <audio><audio>-->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26279.619377155595!2d-58.63505919999999!3d-34.5800704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9bb21142dbb%3A0x42a116b60f567b92!2sHospital%20Privado%20Nuestra%20Se%C3%B1ora%20de%20la%20Merced!5e0!3m2!1sen!2sar!4v1687962055276!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ukaKqesADe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+</html>
+
+<!-- HTML : Hyper Text Markup languaje -->
+<!-- etiquetas : <etiqueta>
+    - apertura y cierre -> <etiqueta></etiqueta>
+    -cierran en si mismas -> <etiqueta />
+-->
+<!-- accesibilidad : buena experiencia 
+lectores de pantallas / screen readers
+-->
+
+<!-- atributos:
+- href -> indicamos a donde redireccionar cuando se clickee ,
+target="_black"-> si queremos que al clickear el enlace lo abra en una nueva pestaña. 
+- class -> clases, es un nombre que podemos darle a etiquetas para "agruparlas " o nombrarlas a todas ellas de una manera mas simple
+ -id -> nombre unico en todo el HTML que podemos asignarle a una etiqueta
+ -title : le agrega un cartelito a las etiquetas
+
+-->
+<!-- ruteo
+./ si es un documento/carpeta que tenemos a la misma altura que el actual.
+../ para "salir" de la carpeta actual y poder ingresar a otras carpetas o archivos que se encuentre por fuera.
+-->
