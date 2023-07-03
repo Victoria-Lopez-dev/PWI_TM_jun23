@@ -1,32 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Intro CSS</title>
+    <link rel="stylesheet" href="./clase3.css"/><!-- manera mas recomendada de incluir CSS en el HTML-->
 </head>
 <body>
-    <h1>Utilizando CSS</h1>
+    <style>
+        /* no es una manera muy recomendada*/
+        /* escribimos el codigo CSS */
+    </style>
+    <h1 class="titulo">Utilizando CSS</h1>
 
-    <h2> Algo de tipografia ..</h2>
+    <!-- <a href="https://www.google.com" style="propiedades/estilos">Ir a google</a>  otra manera no muy recomendable de incluir/definir las propiedades de css del elemento-->
+
+    <h2 class="titulo"> Algo de tipografia ..</h2>
+
     <!-- tarjetas de gatitos-->
-        <img src="./imagenes/gato.jpg" alt="gatito" />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
+    <div class="tarjeta" >
+        <img alt="gatito" src="./imagenes/gato.jpg"/>
+        <p id="texto1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
         <button>Click</button>  
-     
+    </div>
+
+    <div class="tarjeta">
+        <img src="./imagenes/gato.jpg" alt="gatito" />
+        <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
+        <button>Click</button>         
+    </div>
+
+    <div class="tarjeta">
         <img src="./imagenes/gato.jpg" alt="gatito" />
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
-        <button>Click</button> 
+        <button>Click</button>         
+    </div>
 
+    <div class="tarjeta">
         <img src="./imagenes/gato.jpg" alt="gatito" />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
-        <button>Click</button> 
+        <p>Lorem ipsum dolor, sit amet <span>consectetur </span>adipisicing elit. Sint!</p>
+        <button>Click</button>           
+    </div>
 
-        <img src="./imagenes/gato.jpg" alt="gatito" />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint!</p>
-        <button>Click</button> 
+    <div >
+        <h3>Pie de pagina</h3>
+        <p>imagenes obtenidas de freepick</p>
+        <p>contactese con nosotros</p>
 
-    
-    
+    </div>
+  
 </body>
 </html>
+<!--
+    div -> etiquetas apertura y cierre.contenedor ,agrupar etiquetas .Permitirme cambiar todos sus estilos y tamaños 
+    span -> etiquetas apertura y cierre.contenedor, ocupa el minimo espacio posible
+
+-->
+<!-- incluir CSS en el HTML
+ * etiqueta style 
+ * atributo style
+ * un archivo externo CSS
+-->
