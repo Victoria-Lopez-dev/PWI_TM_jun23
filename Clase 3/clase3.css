@@ -10,5 +10,51 @@ selector {
     propiedad: valor;
 }
 */
-/* tipos de selectores*/
+/* tipos de selectores -> podemos llamar a las etiquetas de distintas maneras 
 
+*/
+/* etiqueta*/
+body{
+    background-color: rgba(58, 18, 95,0.7);
+}
+h3{
+    color:red;
+}
+p{
+    color: green;
+}
+
+/* clases */
+
+.titulo{
+    color: rgb(35, 46, 80);/* rgb (red - green-blue)*/
+}
+
+/* id*/
+
+#texto1{
+    color: #487eb0;/*escritura hexadecimal*/
+}
+
+/* selectores combinados:
+     > elemento padre de ese hijo
+     + elemento hermano de otro (pegadito al lado
+    ~ el hermano de otro 
+     */
+/* ancho de un elemento -> width */
+
+/* el elemento p que es hijo de un elemento de clase "tarjeta*/
+.tarjeta > p{
+    background-color: grey;
+}
+
+/* img ~ button{} 
+    p+ button{}
+*/
+/*
+colores primarios luminosos : rojo - azul - verde
+color -> color tipografico
+
+ background-color -> color del fondo de una etiqueta
+
+*/
