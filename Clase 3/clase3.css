@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@100;700&display=swap');
+
+/* si tengo alguna tipografia paga que me descargue o arme */
+@font-face {
+    font-family: 'tan-nimbus';
+    src: url("./fonts/TAN-NIMBUS/TAN-NIMBUS.woff"),url("./fonts/TAN-NIMBUS/TAN-NIMBUS.ttf");
+}
+
 /* comentarios */
 /* podemos crear cuantos archivos CSS necesitemos,aunque recomendamos utilizar uno para poder reutilizar codigo 
 podemos hacer que varios HTML utilicen un mismo archivo CSS
@@ -13,22 +21,66 @@ selector {
 /* tipos de selectores -> podemos llamar a las etiquetas de distintas maneras 
 
 */
+/*selector universal (afecta a todo elemento del HTML) */
+*{
+    font-family: 'Caprasimo', 'cursive';
+    margin: 0;
+    padding: 0;
+}
+
 /* etiqueta*/
 body{
     background-color: rgba(58, 18, 95,0.7);
+    
 }
 h3{
     color:red;
+    font-size: 14px;
 }
 p{
     color: green;
 }
 
-/* clases */
+h1{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size:12px ;
+    background-color: pink;
+   /* padding:20px; en los 4 extremos (arriba-abajo-laterales)*/
+    /* padding-left: 20px; */
+    padding: 40px 20px;/*relleno vertical ; relleno horizontal*/
 
+   /*  padding: 20px 10px 40px 30px;arriba sigue en sentido de las agujas del reloj*/
+
+   margin-bottom: 50px;
+    width: 100px;
+}
+
+#perro{
+    height: 120px;
+}
+img{
+    width: 100%;
+    /* le pido que mida un 80% del ancho del padre*/
+    /* height: 100px; -> propiedad para cambiar el alto de un elemento*/
+}
+
+/* clases */
+.tarjeta{
+    width: 200px;
+    background-color: red;
+    margin: 40px 20px;
+    border: 3px solid brown;
+}
 .titulo{
     color: rgb(35, 46, 80);/* rgb (red - green-blue)*/
+    font-family: 'Lucida Sans', 'Geneva', 'Verdana', "sans-serif";
+    border:2px black dashed ;
+    /* border -> grosor color tipo de borde */
 }
+
 
 /* id*/
 
@@ -57,4 +109,44 @@ color -> color tipografico
 
  background-color -> color del fondo de una etiqueta
 
+*/
+
+button{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color:bisque;
+}
+#tituloh1{
+    color: chocolate;
+}
+/*
+Tamaños tipograficos : 14px - 12px como minimo
+
+unidades em rem 
+1 em -> 16px
+2em -> 16x2
+
+vh o vw -> porcentaje del ancho o alto depantalla
+
+50vh -> 50% del alto de la pantalla (browser)
+
+12vw -> 12% del ancho de pantalla (browser)
+*/
+/*
+modelo de caja: los elementos del HTMl son rectangulos con contenidos
+
+padding -> relleno de la etiqueta
+margin -> margen de las etiquetas
+border
+
+*/
+
+/*
+cuando un elemento se vea afectada por mas de un selector, y tenga en ambas definida una misma propiedad; queda la del selector mas especifico
+
+de mas generico a mas especifico
+universal - etiqueta - clase-id
 */
