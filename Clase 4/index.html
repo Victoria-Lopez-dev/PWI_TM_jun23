@@ -3,78 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de comidas sanas y sobre nutricion">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagen/logo_superior.jpg" type="image/x-icon">
     <title>Clase 4 - CSS</title>
 </head>
 <body>
-    <div class="seccion-menu">
-        <img id="logo" src="./imagen/logo_superior.jpg" alt="logo">
+    <header>
+        <nav class="seccion-menu">
+            <a href="#"><img id="logo" src="./imagen/logo_superior.jpg" alt="logo"></a>
 
-        <!-- menu-->
-        <div class="menu-container">        
-            <ul class="menu">
-                <li class="item-menu">
-                    <a href="#">Nosotos</a>
-                </li>
-                <li class="item-menu">
-                <a href="#"> Productos</a>
-                </li>
-                <li class="item-menu">
-                    <a href="#">Otros</a>
-                </li>
-            </ul>
+            <!-- menu-->
+            <div class="menu-container">        
+                <ul class="menu">
+                    <li class="item-menu">
+                        <a href="#">Nosotos</a>
+                    </li>
+                    <li class="item-menu">
+                    <a href="#"> Productos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">Otros</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- alternativo de menu , sin lista 
+            <nav class="menu">
+                <a href="">Nosotos</a>
+                <a href="">Productos</a>
+                <a href="">Otros</a>
+
+            </nav>-->
+        </nav>
+        
+        <div class="seccion-titulos">
+            <h1 class="titulo-fuente principal">CSS y HTML</h1>
+            <h2 class="titulo-fuente">Mas propiedades de CSS y landmarks</h2>  
         </div>
-        <!-- alternativo de menu , sin lista 
-        <div class="menu">
-            <a href="">Nosotos</a>
-            <a href="">Productos</a>
-            <a href="">Otros</a>
+    </header>        
 
-        </div>-->
-    </div>
-
-    <div class="seccion-titulos">
+    <!-- <header class="seccion-titulos">
         <h1 class="titulo-fuente principal">CSS y HTML</h1>
         <h2 class="titulo-fuente">Mas propiedades de CSS y landmarks</h2>  
-    </div>
+    </header> -->
 
 
-    <div class="seccion-tarjetas">
-    
-        <div class="tarjeta">
-            <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
+    <main class="seccion-tarjetas">
+        <h2 class="titulo-fuente principal">Parte central del sitio</h2>
+        <section>
+            <h3 class="titulo-fuente">Destacados</h3>
+            <div class="tarjeta">
+                <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
 
-            <a href="#" class="boton-tarjeta">Click</a>
-        </div>
-        <div class="tarjeta">
-            <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
+                <a href="#" class="boton-tarjeta">Click</a>
+            </div>
+            <div class="tarjeta">
+                <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
 
-            <a class="boton-tarjeta">Click</a>
-        </div>
-        <div class="tarjeta">
-            <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
+                <a class="boton-tarjeta">Click</a>
+            </div>
+            <div class="tarjeta">
+                <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
 
-            <a class="boton-tarjeta">Click</a>
-        </div>
-        <div class="tarjeta">
-            <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
+                <a class="boton-tarjeta">Click</a>
+            </div>
+        </section>
+        <section>
+            <h3 class="titulo-fuente">Lo ultimo en platos</h3>
+            <div class="tarjeta">
+                <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
 
-            <a class="boton-tarjeta">Click</a>
-        </div>
+                <a class="boton-tarjeta">Click</a>
+            </div>  
+            <div class="tarjeta">
+                <p class="texto-tarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto. </p>
 
+                <a class="boton-tarjeta">Click</a>
+            </div>               
+        </section>
       
-    </div>
-    <div class="seccion">
-        <ol>
+    </main>
+    <section class="seccion-nosotros">
+        <h3 class="nosotros titulo-fuente principal"> Gente que trabaja en este lugar..</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, consequuntur animi totam, quas distinctio odio quisquam a illo, voluptatum asperiores suscipit. Libero suscipit vitae, praesentium aut tenetur provident deserunt?</p>
+      <ol>
             <li>Item</li>
             <li>item</li>
         </ol>
-    </div>
-    <div class="pie-de-pagina">
+    </section>
+    <article>
+        <h3 class="titulo-fuente principal">Nota sobre la alimentacion..</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas earum optio. Qui unde aperiam iste nisi dolor modi labore ipsum, cupiditate architecto doloremque quaerat nihil eius laboriosam, sint quae?</p>
+      
+    </article>
+    <footer class="pie-de-pagina">
         <p>imagenes obtenidas de freepik</p>
         <p>mas datos para el pie de pagina...</p>
         <a href="#">Ir a otra pagina..</a>
         <a href="#">Ir a google</a>
-    </div>
+    </footer>
 </body>
 </html>
+
+<!--
+etiquetas de maquetacion o landmarks
+header -> cabecera del sitio (introdiccion)
+
+nav -> navegacion principal del sitio (puede o no estar dentro del <header>)
+
+main-> la parte central/principal del sitio
+
+section-> indicar una seccion del sitio ( tanto tendro como fuera del main)
+
+footer -> pie de pagina ;
+
+aside -> lateral relacionado con el contenido principal 
+
+article -> si tenemos un articulo
+-->
