@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;100;200&display=swap');
+/* usamos @font-face{} cuando tenemos documentos de la tipografia,*/
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+body{
+    background: url(./imagen/elementos-comida-dibujados-mano/ORFF0J0.jpg);
+}
+a{
+    text-decoration: none;
+}
+/*--------------seccion menu-----------------*/
+.seccion-menu{
+    background-color: lightblue;
+    padding: 10px 5px;
+}
+/* seccionMenu ->camel case
+*/
+#logo{
+    margin-left: 20px;
+}
+
+.menu-container{
+    display: inline-block;
+}
+.menu{
+    /* list-style:url('./imagen/logo_superior.jpg'); */
+    list-style-type: none;
+}
+.item-menu{
+    display: inline-block;
+    padding: 5px;
+}
+
+/*--------------seccion titulos -----------------*/
+.seccion-titulos{
+    height: 500px;
+   
+    background:url(./imagen/plato-pasta.jpg)fixed  0% ;
+    /* background-image:url(./imagen/plato-pasta.jpg);*/
+    background-size: cover;
+    /*background-position: 0%;
+    background-attachment: fixed; */
+    /*cover -> ancho 
+    contain -> alto*/
+}
+.titulo-fuente{
+    font-weight: 400;
+    text-align: center;
+}
+.principal{
+    color: darkmagenta;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    text-shadow:  3px 3px pink,
+                  4px 4px green,
+                  6px 6px red
+                  
+     ;
+}
+/*--------------seccion tarjetas -----------------*/
+.seccion-tarjetas{
+    padding: 50px 10px;
+
+}
+.tarjeta{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+    border:4px solid #F90 ;
+    border-radius: 8px;
+    text-align: center;
+    background-color: lightsalmon;
+}
+.texto-tarjeta{
+    margin: 30px 0px;
+}
+.boton-tarjeta{
+    padding:10px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+   box-shadow:  inset 5px 5px 5px red, 
+                3px 3px  grey;
+    /*box-shadow:none*/
+}
+ol{
+    list-style: upper-alpha;
+}
+
+
+/* 
+    display -> comportamiento elementos en linea o bloque(block: ocupa todo el ancho de pantalla; no permite que se posicione ningun elemento al lado)
+    inline/ inline-block -> permite que el elemento se comporte en linea ( permita que otro elemento se posicione al lado 
+*/
+/*
+las imagenes y las anclas por defecto se comportan en linea
+*/
