@@ -1,3 +1,77 @@
+/*---------navegacion--------*/
+
+ul{
+    background-color: greenyellow;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 10px;/* distancia entre elementos hijos*/
+}
+li{
+    background-color: blueviolet;
+    border: 2px solid red;
+    padding: 5px;
+    /* margin-left: 10px; */
+}
+
+
+/*---------main area--------*/
+section{
+    height: 500px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    display: flex;
+    /*direccion : fila (row) o columna*/
+    flex-direction: row;
+    /*alineacion vertical y horizontal */
+    /*alinear de manera horizontal (cuando es una row);
+    alinear de manera vertical(cuando es column)*/
+    justify-content:space-between;
+
+    /*alinear de manera vertical(cuando es una row)
+    alinear de manera horizontal (cuando es column)*/
+    align-items:center ;    
+    /* indicar que es 'mas importante' si el tamaño de los hijos o la direccion . */
+    flex-wrap:wrap ; 
+    /* flex-flow: row wap; simplifica las propiedades de direccion y wrap */
+}
 .cuadro{
+    width: 150px;
+    height: 150px; 
+    background-color: pink;
+    border: 2px solid violet;
     
 }
+
+.cuadro1{
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0%;
+    background-color: darkorange;
+    border: 1px solid black;
+}
+
+.cuadro2{
+    background-color: yellow;
+    /*justify-self ; align-self ;*/
+    align-self: flex-start;
+}
+/*
+display:flex (padre para sus hijos)
+para que el hijo se comporte distinto , no hace falta el display flex
+*/
+/* le decimos al padre como se tienen que ubicar los hijos
+
+main es el padre de los div de clase 'cuadro' 
+
+flexbox se puede aplicar en cualquier etiqueta. */
+
+/*
+justify-content -> flex-start, flex-end , center , space-between , space-around , space-evenly
+
+*/
