@@ -1,0 +1,63 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+    margin-bottom: 10px;
+}
+
+main{
+    background-color: violet;
+    height: 400px;
+    display: grid;
+    /*armar la grilla para ubicar a los elementos hijos*/
+   grid-template-columns:200px 300px 150px 400px;
+     /*grid-template-columns: repeat(4,150px);*/
+    /*las columnas de la grilla.
+    repeat(cant,unidad)*/
+  /* grid-template-rows:200px 300px ;  ;las filas de la grilla*/
+    row-gap:20px ;/*espacio entre filas*/
+    column-gap: 40px;/*espacio entre columnas*/
+}
+
+.cuadro{
+   width: 100%;  
+    justify-self: center;/* justify-self y align-self funcionan con grid para alinear a los hijos dentro de los casilleros */
+    /* height: 150px; */
+    background-color: darkcyan;
+    border: 2px solid lightgreen;
+    color: white;
+}
+
+.cuadro1{
+    background-color: #F90;
+    grid-row: 1/3;
+}
+.cuadro3{
+    background-color: cornflowerblue;
+    grid-column: 3/5;
+}
+
+section{
+    display: grid;
+    background-color: blue;
+    width: 800px;
+    height: 300px;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    margin-top: 50px;
+}
+/*
+    grilla 
+    armar la grilla en el elemento padre y ubicar a los elementos hijos
+*/
+
+/*
+por defecto coloca a cada elemento hijo dentro de cada casillero de la grilla.
+para cambiar este comportamiento:
+ - grid-column
+ - grid-row
+ ambas en los elementos hijos donde le indico desde que columna/fila inicia, y hasta que columna/fila llega
+*/
+/*
+fr -> fraccion 
+*/
