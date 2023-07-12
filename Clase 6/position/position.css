@@ -2,4 +2,79 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: aqua;
+    width: 400px;
+    margin: auto;
+    position: relative;/* lo ponemos para que tome como 0,0  el exptremo superior del main. Sino , tomaria como 0,0 al body*/
+}
+p{
+    text-transform: uppercase;
+    text-align: center;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.static{
+    background-color: cadetblue;
+    position: static;/* valor por defecto de position, si no lo definimos es static*/
+    z-index: 0;
+}
+.relative{
+    background-color: salmon;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+    /*top -bottom- left-right */
+    z-index: 2;
+}
+.absolute{
+    background-color: darkmagenta;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    z-index: 1;
+}
+/*
+para definir el orden en el que aparecen ( quien esta mas arriba de quien)
+z-index -> numero (sin unidad) donde voy dandole el orden
+cuando mas grande es, mas arriba esta
+*/
+.ejemplo{
+    position: relative;
+}
+.img-ejemplo{
+    width: 100%;
+    opacity: 0.5;
+}
+.hola{
+    background-color: orange;
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    width: 100%;
+}
+
+.fixed{
+   
+    background-color: sienna;
+    position: fixed;/* saca del plano no deja el espacio que ocupaba(absolute pero queda fijo en la coordenada,tomando como 0,0 al body*/
+    right: 10px;
+    bottom:40px;
+    z-index: 4;
+}
+.sticky{
+    background-color: gold;
+    position: sticky;/* se comporta estatico , y al hacer scroll nos sigue como el fixed. toma como 0,0 al elemento padre */
+    top: 0px;
+    z-index: 5;
 }
