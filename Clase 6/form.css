@@ -41,7 +41,9 @@ textarea{
     border: 2px solid darkslategray;
     border-radius: 8px;
 }
-
+input:focus{
+    border: 2px solid purple;
+}
 /*
     pseudoclase
     selector:pseudoclase{
