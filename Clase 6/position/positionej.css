@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 nav{
     background-color: brown;
@@ -13,8 +16,18 @@ nav{
     align-items: center;
     padding: 5px;
     margin-bottom: 20px;
+    z-index:2 ;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+h1{
+    text-align: center;
+    padding: 10px;
+}
 main{
     padding-top: 2 0px;
     display: grid;
@@ -23,12 +36,47 @@ main{
     column-gap: 40px;
 
 }
-img{
+.titulo-tarjeta{
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    z-index: 1;
+    text-transform: uppercase;
+}
+.tarjeta-img{
     width: 200px;
+    opacity: 0.6;
+}
+.tarjeta-texto{
+    padding: 20px 0px;
+    font-size: 14px;
+}
+img:hover + h2{
+    display: block;
 }
 .sobre{
     width: 50px;
     position: fixed;
     bottom: 20px;
     right: 10px;
+}
+.tarjeta{
+    background:linear-gradient(130deg,#F90 50%,#ffe67c ) ;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-self: center;
+    position: relative;
+}
+footer{
+    margin-top: 20px;
+    background-color:brown ;
+    padding: 20px 5px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
 }
