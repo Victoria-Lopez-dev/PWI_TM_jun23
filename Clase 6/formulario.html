@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <section>
+        <h2>Un formulario</h2>
+        <form action="" method="">
+
+            <div class="input-area">
+                <label for="nombre"> Nombre:</label>
+                <input type="text" class="input-text" name="nombreAlumno" id="nombre"/>                
+            </div>
+
+            <label for="apellido">Apellido:
+                <input type="text" class="input-text" name="apellido" id="apellido" disabled/>
+            </label>
+            <div class="input-area">
+                <label for="email"> Correo Electronico:</label>
+                <input type="email" class="input-text" name="emailAlumno" id="email" placeholder="ejemplo@ejemplo.com" required/>                
+            </div>
+            <div class="input-area">
+                <label for="password"> Contraseña:</label>
+                <input type="password" class="input-text" name="passwordAlumno" id="password" minlength="8"/>                
+            </div>
+
+            <label for="">Eliga el turno: </label>
+
+            <label for="TM">
+                Turno Mañana
+                <input type="radio" name="turno"  id="TM" value="mañana">
+            </label>
+
+            <label for="TT">
+                Turno Tarde
+                <input type="radio" name="turno"  id="TT" value="tarde">
+            </label>
+
+            <label for="TN">
+                Turno Noche            
+                <input type="radio" name="turno"  id="TN" value="noche">
+            </label>
+
+            <label for="">Elija en que cursos quiere inscribirce:</label>
+            
+            <div class="input-area">
+                <label for="PWI">Prog. Web Inicial</label>
+                <input type="checkbox" name="curso" id="PWI" value="P.W.Inicial">                
+            </div>
+
+            <div class="input-area">
+                <label for="PWA">Prog. Web Avanzado</label>
+                <input type="checkbox" name="curso" id="PWA" value="P.W.Avanzado">    
+            </div>
+
+            <div class="input-area">
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Francia">Francia</option>
+                </select>
+            </div>
+            <div class="input-area">
+                <label for="comentarios">Mensaje con comentarios:</label>
+                <p id="texto-info">* Como maximo puede mandar hasta 200 caracteres</p>
+                <textarea name="comentarios" id="comentarios" maxlength="200"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar" id="boton-form">
+          <!--  <input type="number" name="" id="" >
+             <button type="submit">Enviar</button> -->
+            <!-- <input type="email"  id=""/>
+            <input type="password"  id=""/> -->
+
+        </form>        
+    </section>
+
+</body>
+</html>
+
+<!-- 
+
+    
+    peticiones -> protocolo HTTP
+    GET -> pedimos informacion , que nos traiga algo(documentos, mensajes,etc..)
+    POST -> mandamos informacion
+    DELETE, PUT,PATCH
+-->
+<!--
+for del label tiene que coincidir con el id del input
+
+input type=email -> verifica que tenga la estructura de un email nnn@nn.nn
+
+-->
+<!--
+{
+    nombreAlumno:MAria,
+    apellido:
+    turno:tarde,
+    curso:P.W.Inicial,P.W.Avanzado
+}
+
+-->

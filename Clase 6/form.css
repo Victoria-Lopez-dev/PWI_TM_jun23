@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@300&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+h1:hover{
+    color: green;
+}
+h1,h2{
+    text-transform: uppercase;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 60vw;/*60% del ancho de pantalla*/
+    border: 2px solid violet;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-text{
+    width: 70%;
+    border: 2px solid lightseagreen;
+    height: 30px;
+    border-radius: 8px;
+}
+#texto-info{
+    font-size: 12px;
+    
+}
+textarea{
+    width: 90%;
+    height: 80px;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+}
+#boton-form{
+    padding: 5px;
+    background-color: lightseagreen;
+    border: 2px solid darkslategray;
+    border-radius: 8px;
+}
+
+/*
+    pseudoclase
+    selector:pseudoclase{
+        propiedades 
+    }
+
+    cuando el mouse pase por encima del elemento que tenga este selector ..
+    cuando se pulse sobre el elemento que tenga este selector..
+*/
