@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #E8A805;
+}
+.translate{
+        transition: transform 3s;
+        background: radial-gradient(ellipse at top,white,black);
+/* si lo pongo en la pseudoclase, solo la transicion la realiza  en un sentido(no cuando salimos de esa pseudoclase*/
+}
+
+.translate:hover{
+ /* 
+    transform: translate(x,y)
+    transform: translate(200px) eje x
+    translateY()y traslateX() si quiero solo un eje
+ */
+    transform: translate(200px,-100px);
+}
+.rotate{
+    transform: rotate(0deg);
+    background: linear-gradient(25deg,black 0%,white 50%),linear-gradient(75deg,black 50%,white 100%);
+}
+.rotate:active{
+    transition: transform 4s;
+    transform: rotate(180deg);/*gira 180grados partiendo del estado inicial 0deg*/
+}
+.scale:hover{
+    transition: all 4s;
+    background-color: lightgreen;
+    /* 
+    transform: scale(x,y)
+    */
+    transform: scale(2,0.5);/* numero sin unidad , multiplica del tamaño del elemento por el valor dentro*/
+}
+.skew{
+    /* transform: skew(x,y) */
+    transform: skew(20deg);
+}
+
+.imagen{
+    width: 100px;
+    border: 2px solid black;
+}
+.imagen:hover{
+    cursor: pointer;
+    transition: transform 0.5s; 
+    transform: scale(1.5);
+    border-radius: 50%;
+}
+
+/* 
+    eje x (deracha-izquierda)
+   eje y (arriba -abajo)     
+*/
+/*
+transform
+animation
+transition: propiedad tiempo,
+
+*/
+
+
+
+/*
+UNIDADES
+    s -> segundos
+    ms -> milisegundos
+    deg -> grados
+
+    unidad de grados : deg (degree)
+    + sentido horario (hacia la derecha)
+    - sentido antihorario(hacia la izquierda)
+*/
