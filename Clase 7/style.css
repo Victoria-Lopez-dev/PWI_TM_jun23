@@ -1,20 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+*{
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
 body{
     background-color: #333333;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    color: whitesmoke;
 }
 
 /* -------  menu principal  -------*/
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+}
+/* cambio de estilo en el menu hamburguesa*/
+.hambuguesa{
+    font-size: 40px;
+    color: black;
+    display: none;
+}
 .logo{
     width: 200px;
 }
+
+.menu{
+    list-style-type: none;
+    background-color: #333333;
+    display: flex;
+    gap: 10px;
+}
+li{
+    padding: 10px;
+}
+#input-hamb{
+    display: none;
+}
 /* -------  seccion tarjetas  -------*/
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    row-gap: 20px;
+    
+}
+.tarjeta{
+    width: 300px;
+    border: 5px solid lightblue;
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+}
+
+.titulo-tarjeta{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.tarjeta>img{
+    width: 100%;
+    border: 4px solid red;
+}
+.boton{
+    padding: 10px;
+    background-color: brown;
+    color:white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+.boton:active{
+    background-color: darkorchid;
+}
+.submenu{
+    list-style-type: none;
+    background-color: pink;
+    color:black;
+    display: none;
+    position: absolute;
+    top:40px
+}
+.item-menu{
+    position: relative;
+    cursor: pointer;
+}
+.item-menu:hover>.submenu{
+    display: block;
+}
 
 /* -------  pie de pagina  -------*/
 
+footer{
+    padding: 20px;
+    background-color: darkgoldenrod;
+}
+
+/*-- sector media queries ---*/
+
+@media(max-width:800px){
+    /* codigo a modificar para tablet */
+    section{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+    footer{
+        background-color: darkmagenta;
+    }
+}
+
+@media (max-width:500px){
+    section{
+        grid-template-columns: 1fr;
+    
+    }
+    .hambuguesa{
+        display: block;
+    }
+    #input-hamb:checked + .menu{
+        display: flex;
+    }
+    /* .hambuguesa:hover+ .menu{
+        display: flex;
+    } */
+    .menu{
+        display: none;
+        flex-direction: column;
+    }
+}
+/* @media screen and  (min-width: 768px) and (max-width: 1023px){
+    section{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+    footer{
+        background-color: darkmagenta;
+    }
+} */
 
 
-/*-- sector mediaqueries ---*/
+
+/* MVP */
+/*
+    responsive desing -> adaptabilidad a distintos anchos de pantalla /navegador
+
+    accesibilidad -> que todo tipo de usuario tenga una buena experiencia en el sitio
+
+    mobile first -> diseño parte de dispositivo mobile ( ancho mas pequeño)
+
+    compu -> celu (max-width)
+    celu -> compu (min-width)
+*/
+
+/*
+box-sizing -> content-box ( por defecto), no tiene en cuenta padding ni border para el ancho o alto
+
+box-sizing -> border-box el ancho y el ancho definido tiene en cuenta el tamaõ del border y padding
+
+*/
