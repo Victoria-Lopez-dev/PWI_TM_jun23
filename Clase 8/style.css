@@ -1,0 +1,29 @@
+h1{
+    background: linear-gradient(45deg,#F90 50%,yellow 100%) ;
+    font-size: 80px
+}
+.text-sucess{
+   color: rgb(64, 99, 64)!important;
+}
+.tarjetas-section{
+    gap: 20px;
+}
+
+.boton-tarjeta{
+    color: #F90;
+    background-color: aqua;
+}
+.card{
+    padding: 0;
+    /* width: 18rem; */
+}
+
+/*
+    En el archivo CSS que creamos lo utilizamos para colocar las propiedades particulares que necesitemos o que queremos modificar de las que nos probee Bootstrap
+
+    Si descargamos Bootstrap en nuestro proyecto, en vez de utilizar CDN, recordar que no vamos a modificar los documentos de Bootstrap, sino utilizar un archivo externo CSS.
+
+    Esto lo que hace es que se vayan "pisando" las propiedades definidas por boostrap por las nuestras.
+
+    CUIDADO con el exceso uso de !important; solo usemos la en aquellas propiedades de bootstrap que querramos pisar, que tengan dicho agregado.
+*/
