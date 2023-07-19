@@ -1,3 +1,10 @@
+.img-logo{
+    width: 90px;
+}
+/* .navbar-collapse{
+    justify-content: end;/* clase en bootstrap: justify-content-end 
+} */
+
 h1{
     background: linear-gradient(45deg,#F90 50%,yellow 100%) ;
     font-size: 80px
@@ -16,6 +23,17 @@ h1{
 .card{
     padding: 0;
     /* width: 18rem; */
+}
+@media(min-width:1200px){
+    .nav-item{
+        text-align: start;
+    }
+}
+
+@media(min-width:500px){
+    .nav-item{
+        text-align: end;
+    }
 }
 
 /*
