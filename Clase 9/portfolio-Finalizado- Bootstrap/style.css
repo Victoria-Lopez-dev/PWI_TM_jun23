@@ -175,6 +175,6 @@ section{
         grid-template-columns: repeat(3,1fr);
     }
      .arrow{
-        position: relative;
+        position: static;
     }
 }
