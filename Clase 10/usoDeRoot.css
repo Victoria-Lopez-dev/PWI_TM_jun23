@@ -1,0 +1,62 @@
+/* import de tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+/* uso de root */
+
+:root{
+    /* --variable : valor;*/
+    --colorPrincipal:#F90;
+    --tipografiaSmall:16px;
+    --colorVioleta:#903290;
+    --border1: 4px solid #FF6788;
+    --tipoSecundaria:'Roboto', sans-serif;
+    --distancia:10px;
+
+}
+
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* div de la tarjeta*/
+div{    /*                       #F90      */    
+    background-color: var(--colorPrincipal);
+}
+.tarjeta{
+    background-color: #FA7845;
+    border: 4px solid var(--colorVioleta);
+    width: 300px;
+    margin: 40px auto;
+ 
+}
+#una-tarjeta{
+    background-color: #FF6788;
+}
+/*-----------------*/
+h1{
+    color: var(--colorPrincipal);
+}
+h2{
+    font-family: var(--tipoSecundaria);
+    margin :20px;
+    margin:var(--distancia);/* queda este valor por ser el ultimo que escribimos */
+}
+
+button{
+    padding:10px;
+    background-color: var(--colorPrincipal);
+    font-size: var(--tipografiaSmall);
+}
+
+p{
+    font-size: var(--tipografiaSmall);
+    font-family: var(--tipoSecundaria)
+}
+section{
+    border: 2px solid blue;
+}
+/*
+ id
+ class
+ etiqueta
+ */
