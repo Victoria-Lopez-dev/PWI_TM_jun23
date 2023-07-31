@@ -1,4 +1,5 @@
 //codigo JS
+//poco tipado y permisivo 
 
 /* Comentarios 
     en multiples
@@ -16,7 +17,8 @@
 
 "Un texto tan largo como quiera....."
 
-console.log(`Admin123`,'Juan')
+console.log(`Admin123` ,'Juan')
+
 
 //------------------------------------
 
@@ -39,8 +41,8 @@ console.log(10 -"Hola") //tratando de hacer el calculo matematico
 //boolean - booleanos -> verdadero y falso 
 // true false 
 
-true  /* distinto   "true" -> string*/
- false
+true  /* distinto   "true" -> string*//* 1*/
+ false/* 0 */
 
  console.log(false)
 
@@ -52,7 +54,7 @@ true  /* distinto   "true" -> string*/
 
 console.log(10+20)//numbers -> suma matematica(calculo)
 console.log("10"+"20");//strings -> concateno ,los escribe uno al lado del otro
-
+//           "1020"
 //null , undefined 
 null 
 undefined
@@ -67,15 +69,15 @@ undefined
 
 //pr nombre= valor;
 
-let edad=25;
-var nombrePersona="Marta";
-//const nombrePersona="Marta";
+let edad=0;
+//var nombrePersona = "Jose";
+const nombrePersona="Marta";
+let total='blka';
 
 
+let edad1=40;
 
-let edad2=40;
-
-console.log(nombrePersona)
+console.log(nombrePersona);
 //2do utilizar
 
 //nombre
@@ -84,7 +86,7 @@ edad+10;
 //cambio el valor de una variable | redefinir una variable
 
 edad=789;
-nombrePersona=true;
+//nombrePersona=true;
 
-console.log(nombrePersona)//ya no es mas "Marta" ahora es true
+console.log(nombrePersona)//ya no es mas "Jose" ahora es true
 //si estuviera definida con conts, el contenido de la variable no se puede cambiar
