@@ -56,7 +56,18 @@ do{
 // }while(numero != "fin")
 
 
-// bucles nativos -> recorre arrays
+// bucles/funciones nativos/as -> recorre arrays forEach() - map()- filter()- find()
+//console.log() - prompt() - alert()
 
+//array.forEach(()=>{}) // parecido al for of recorre todo el array 
 
+for( let alumno of alumnos){
+    //accion/es a repetir
+    console.log(alumno)
+}
 
+alumnos.forEach((alumno)=>{
+    console.log(alumno)}
+);
+
+//array.map(()=>{});
