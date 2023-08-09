@@ -16,15 +16,25 @@ let remeras={
     talles:[{size:"X",cantidad:10},"M","XL"],
     stock:20,
     descuento:false,
-    color:["rojo",'azul']
+    colorDisponible:["rojo",'azul']
 };
+console.log(remeras)
 
-let pantalones={
-    i:"hola",
-};
+//antes se usaba para llamar a una propiedad
+//objeto["propiedad"]
+//para ver un valor de un objeto
+//objeto.propiedad -> valor
 
-let zapatillas={
+console.log(remeras.descuento)
 
-};
+//modificar el valor de una propiedad
 
-let productos=[remeras ,pantalones,zapatillas];
+remeras.stock=40
+
+//agerar una nueva propiedad
+
+remeras.material="algodon"
+
+//eliminar una propiedad
+
+delete remeras.colorDisponible
