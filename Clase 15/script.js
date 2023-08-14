@@ -109,7 +109,7 @@ gato.classList.add("ampliar")
 gato.classList.toggle("gato")
 
 //gato.classList.remove("gato")
-gato.classList.toggle("gato")
+gato.classList.remove("gato")
 
 
 //----- cambio de estilos utilizando 'style'
