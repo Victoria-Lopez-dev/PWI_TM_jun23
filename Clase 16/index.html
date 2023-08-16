@@ -12,12 +12,13 @@
     <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam.</p>
 
     <section>
-        <h2 onclick="cambioTexto()" onmouseover="funcionCambio()">SUBTITULO</h2>
+        <h2 onclick="cambioTexto(event)" >SUBTITULO</h2>
     </section>
 
+    <button onclick="funcionCambio(this)">Boton secundario</button>
 
-    <button id="boton_cambio" onclick="funcionCambio()">Cambiar Color</button>
-    <form action="">
+    <button id="boton_cambio">Cambiar Color</button>
+    <form action="" onsubmit="funcionCambio(this)">
         <label for="bla">label formulario</label>
         <input type="text" id="bla">
         <input type="submit" value="enviar" id="boton_form">
