@@ -142,11 +142,11 @@ let data;
  //buscar la informacion de los personajes de ricky y morty
 
 
- fetch("https://rickandmortyapi.com/api/character")
- .then((response)=>{response.json()})
- .then((data)=>console.log(data))
- .catch((err)=>{console.log(err)})
+     fetch("https://rickandmortyapi.com/api/character")
+                        .then((resp)=>resp.json())
+                        .catch((err)=>console.log(err))
 
+                       
 
  //Conclucion
 
