@@ -26,3 +26,11 @@ img{
 .seccion-nodos{
     height: 400px;
 }
+.texto16{
+    font-size: 16px;
+}
+.violeta{
+    background-color: violet;
+    width: 500px;
+    height: 30px;
+}
