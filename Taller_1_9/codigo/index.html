@@ -39,7 +39,7 @@
 
     <section>
        <h2>Cambiando la imagen</h2> 
-       <img id="imagen-cambio" src="./images/puerta.jpg" >
+       <img id="imagen-cambio" src="./images/puerta.jpg" onmouseover="cambioImagen(this)" >
     </section>
     
     <section class="seccion-nodos">
@@ -48,14 +48,14 @@
     </section>
    
     <section style="margin-top: 20px;">
-        <h2>ejercicio 6</h2>
+        <h2>ejercicio 6 : numeros</h2>
         <form action="">
             <label for="">Colocar un numero</label>
             <input type="text" name="num1" id="num1">
             
             <label for="">Colocar otro numero</label>
             <input type="text" name="num2" id="num2">
-            <input type="submit" value="Sacar Promedio">
+            <input type="submit" value="Sacar Promedio" onclick="funcionEj6(event)">
         </form>
         <h3>resultado</h3>
         <div class="violeta"></div>
