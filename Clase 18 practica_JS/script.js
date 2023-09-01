@@ -32,3 +32,6 @@ const productos=[{
     categoria:"cuidados"
 }];
 
+console.log(document.querySelector(".tarjeta2").innerHTML)
+
+document.querySelector("#tarjeta2_h3").textContent=productos[1].nombre
