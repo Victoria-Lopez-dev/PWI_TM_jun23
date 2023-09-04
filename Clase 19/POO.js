@@ -93,8 +93,9 @@ class Asistente{
 const asistenteSemana= new Asistente("Marta",30,"marta@veterinaria.com");
 const asistenteFindeSemena= new Asistente("Juan",40,"juan@veterinaria.com");
 
-asistenteSemana.hacerFichaAnimal(perro1);
+ asistenteSemana.hacerFichaAnimal(perro1);
 
-asistenteFindeSemena.hacerFichaAnimal(perro2);
+ asistenteFindeSemena.hacerFichaAnimal(perro2);
 
-hacerFichaAnimal(perro3)
+//hacerFichaAnimal(perro3)
+
