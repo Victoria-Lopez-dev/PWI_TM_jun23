@@ -1,0 +1,7 @@
+nav{
+    background-color: lightblue;
+}
+.menu{
+    display: flex;
+    gap:20px
+}
