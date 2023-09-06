@@ -7,20 +7,40 @@ import React from 'react';
 //componentes
 import Navegacion from './componentes/Navegacion/navegacion';//importando archvio js
 import Footer from './componentes/Footer';//importando el archivo js
+import Boton from './componentes/Boton/boton.js'
 
  function App() {
+
+  let nombre="Hoja de App";
+  let lista=["dhajkshd",1231];
+  const saludo=()=>{
+    console.log("HOLA!")
+  }
+
     return (
       <div>
         <header> 
+        <Boton colorFondo={"btn-success"} tituloBoton={"Click!"}/>
           <h1 id='titulo'>Primer titulo</h1>
           <p className="texto">un texto</p>
         </header>
-        <Navegacion/>
+        <Navegacion dato={nombre} lista={lista} unaFuncion={saludo}/>{/* pasando la informacion de nombre al componbente Navegacion */}
         <main>
+        <Boton colorFondo={"btn-primary"} tituloBoton={"Pulsar"}/>
           <h2 className="texto">Subtitulo</h2>
           <p className="texto">Un texto breve.......</p>
-          <img src='./logo192.png' alt="imagen ejemplo"/>
+          <img src='./imagenes/logo192.png' alt="imagen ejemplo"/>{/* en el ruteo de las imagenes en esta parte HTML , accede a la misma partiendo de la carpeta public */}
+          <ul className="list-group">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
         </main>  
+
+        <Boton colorFondo={"btn-danger"} tituloBoton={"Aqui!!"}/>
+
         <Footer/>
 
       </div>
@@ -46,3 +66,4 @@ export default App;// permitir que desde otro documento lo puedan importar
 //div - etiqueta de maquetacion
 
 // en vez del atributo class usamos el atributo className
+//para acceder a las imagene parte directamente de la carpeta public ( no necesitamos hacer todo el ruteo hasta esa carpeta)

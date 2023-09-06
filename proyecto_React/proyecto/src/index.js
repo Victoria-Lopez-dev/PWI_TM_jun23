@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.js';//importando  el componente App
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import Home from './paginas/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />{/* estoy colocando el componente App para que lo renderize apenas carga el sitio */}
+    <App />
   </React.StrictMode>
 );
 

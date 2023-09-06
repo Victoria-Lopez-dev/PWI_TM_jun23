@@ -1,11 +1,12 @@
 //estilo
 import './navegacion.css'
 
-function Navegacion() {
+function Navegacion({dato,lista,unaFuncion}) {
+    unaFuncion()
     return(
         <nav>
             <ul className="menu">
-                <li>item menu</li>
+                <li>{dato}</li>
                 <li>item menu</li>
             </ul>
             
@@ -28,3 +29,6 @@ function Navegacion() {
 
 
 export default Navegacion
+
+//destructing
+
