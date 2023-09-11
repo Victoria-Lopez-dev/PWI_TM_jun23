@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-
+p{
+    background-color: darkmagenta;
+    font-size: 20px;
+}
 li{
     color: red;
 }
 button{
     background-color: darkblue;
+    padding: 10px;
+}
+img{
+    width: 100px;
 }

@@ -1,9 +1,14 @@
-import Home from './pages/Home/Home.js';
+//import Home from './pages/Home/Home';
+import Character from './pages/Characters/Characters'
 import './App.css';
 
 function App() {
   return (
-    <Home/>
+    <div>
+      {/* <Home/>*/}
+      <Character/>    
+    </div>
+
   );
 }
 
