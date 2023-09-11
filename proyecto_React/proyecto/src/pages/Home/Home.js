@@ -12,6 +12,7 @@ export default function Home() {
             <h3>Lets go!</h3>
             <button className='btn btn-danger p-2 me-2'>Charactes</button>
             <button className='btn btn-danger p-2 me-2'>Contact</button>
-        </div>
+            <button type="button" className="btn btn-info">Info</button>
+            </div>
     )
 }

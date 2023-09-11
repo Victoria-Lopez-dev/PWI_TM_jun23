@@ -1,19 +1,24 @@
-
-
 import './App.css';
 
-function App() {
+import Nav from './components/Navegacion';
 
+function App() {
+  const nombre="ANA";
 
   return (
-    <div >
-    
+    <div>
+      <Nav nombrePersona={nombre} item2={"otro item"}/>
+      <h1>Soy un titulo</h1>
+      <p>{nombre}</p>
+      <button >Click App</button>
+      <img src='/images/ejemplo-logo.png'/>{/* parte de que los archivos estaticos(entre ellos las imagenes) estan en la carpeta public */}
     </div>
+    
   );
 }
+//props ? -> propiedades padre-hijo | objeto con todas las propiedades del componente
 
-
-
+//{nombrePersona,item2}=props
 
 
 

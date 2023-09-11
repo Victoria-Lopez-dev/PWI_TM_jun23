@@ -2,5 +2,6 @@ body {
   background-image: url(../public/images/rickymorty.jpeg);
   background-attachment: fixed;
   background-size: cover;
+  color: white;
 }
 
