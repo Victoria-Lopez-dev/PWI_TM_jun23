@@ -1,13 +1,14 @@
 //import Home from './pages/Home/Home';
 import Character from './pages/Characters/Characters'
 import './App.css';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div>
+    <Fragment>
       {/* <Home/>*/}
       <Character/>    
-    </div>
+    </Fragment>
 
   );
 }

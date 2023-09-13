@@ -11,6 +11,7 @@ export default function Home() {
             Also you can filter for diferent types of properties to find the character that you are looking for or send us a massage for any concern o sugestion</p>
             <h3>Lets go!</h3>
             <button className='btn btn-danger p-2 me-2'>Charactes</button>
-            <button className='btn btn-danger p-2 me-2'>Contact</button>        </div>
+            <button className='btn btn-danger p-2 me-2'>Contact</button>       
+         </div>
     )
 }
