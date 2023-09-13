@@ -1,0 +1,20 @@
+.item{
+    background-color: darkcyan;
+    padding: 5px;
+    width: 100px;
+    margin: 2px
+}
+
+button{
+    background-color: darkorchid;
+    padding: 10px;
+}
+.btn1{
+    background-color: green;
+}
+.btn2{
+     background-color: blue;
+}
+.btn3{
+    background-color: brown;
+}

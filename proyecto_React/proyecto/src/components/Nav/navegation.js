@@ -1,7 +1,7 @@
 
 export default function Nav({itemMenu}) {
     return(
-        <nav className="container-fluid">
+        <nav className="container-fluid bg-primary">
         <div className="row">
             <h1 className="col-4">RicK &Morty</h1>
             <ul className=" col-8 d-flex gap-5">
