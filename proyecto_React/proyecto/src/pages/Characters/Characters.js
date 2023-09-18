@@ -1,3 +1,5 @@
+import './characters.css'
+
 import {useState, useEffect, Fragment} from 'react';
 
 import Nav from '../../components/Nav/navegation'
@@ -44,21 +46,8 @@ export default function Character() {
     //     setPersonajes(listaPersonajes)//cambiamos el estado personajes utilizando su setter
     // }
 
-    let filtrar=(nombreCheckbox)=>{
-        if(nombreCheckbox === "Alive" || nombreCheckbox === "Dead"){
-                let resultado=personajes.filter((personaje)=> personaje.status === nombreCheckbox)
-                setPersonajes(resultado)//nueva lista de personajes a reproducir
-            }
-            if(nombreCheckbox === "Female" || nombreCheckbox === "Male"){
-                let resultado=personajes.filter((personaje)=> personaje.gender === nombreCheckbox)
-                setPersonajes(resultado)
-            }
-            if(nombreCheckbox === "unknown"){
-                let resultado=personajes.filter((personaje)=> personaje.origin.name === nombreCheckbox)
-                setPersonajes(resultado)
-            }
-    }
 
+//evento onChange de los checkbox para ver si tengo que agregar o sacar de la lista de filtros a aplicar a algun filtro
     let aplicarFiltros=(event)=>{
         let nombreCheckbox=event.target.id;
 
@@ -68,18 +57,14 @@ export default function Character() {
             //console.log(personajes)
         }else{
             console.log("sacar filtro")
-            let filtrosRestantes=filtrosAplicados.filter((el)=>el !== nombreCheckbox)
+            let filtrosRestantes=filtrosAplicados.filter((el)=>el !== nombreCheckbox);
+            setPersonajes(listaCompleta);//para que agregue los personajes que no tenia por el filtro
             setFiltrosAplicados(filtrosRestantes)
-            setPersonajes(listaCompleta)
-
+    
         }    
-        console.log(filtrosAplicados)
-        filtrosAplicados.forEach((filtro)=>{filtrar(filtro)})
            // console.log(nombreCheckbox)info de que checkbox esta pulsando
            // console.log(event.target.checked) si el checkbox esta checked o no
     }
-
-
 
     useEffect(()=>{
         let guardarPersonajes=async()=>{
@@ -95,6 +80,26 @@ export default function Character() {
         
     },[])
 
+    // uso un useEffect para que aplique los filtros cada vez que vea que se modifica la lista de filtros a aplicar
+    useEffect( ()=>{
+        //console.log(filtrosAplicados)
+      filtrosAplicados.forEach((filtroNombre)=>{
+            let resultado;
+            if(filtroNombre === "Alive" || filtroNombre === "Dead"){
+                    resultado=personajes.filter((personaje)=> personaje.status === filtroNombre)
+                }
+                if(filtroNombre === "Female" || filtroNombre === "Male"){
+                    resultado=personajes.filter((personaje)=> personaje.gender === filtroNombre)
+                }
+                if(filtroNombre === "unknown"){
+                    resultado=personajes.filter((personaje)=> personaje.origin.name === filtroNombre)
+                    
+                }
+                setPersonajes(resultado)//nueva lista de personajes a reproducir
+        })
+       
+    },[filtrosAplicados])// la dependencia de "filtrosAplicados"
+
 
 
     return(
@@ -108,11 +113,21 @@ export default function Character() {
             </section>
             {/*  <button onClick={guardarPersonajes}>Traer Info</button>*/}
             <section>
-             {personajes.map((personaje)=>{
-                return <Card key={personaje.id} data={personaje}/>
-             })}
+            {/* usamos un operador ternario para que en caso que no encuentre personajes con esos filtros tire el cartel de alerta (es decir que si el array personaje nos da 0 items) */}
+                {personajes.length>0?
+                    personajes.map((personaje)=>{
+                                return <Card key={personaje.id} data={personaje}/>
+                    }):
+                    <div className="alert  d-flex gap-2" role="alert">
+                    <i className="bi bi-exclamation-triangle-fill fs-5"></i>{/* icono de alerta */}
+                    <p className='m-0'>Sorry! There are no characters width all those properties</p>
+                    </div>
+                }
+
+            
     
             </section>
         </Fragment>
     )
 }
+//operador ternario (condicional)->estructura :  condicion? si se cumple:si no se cumple;

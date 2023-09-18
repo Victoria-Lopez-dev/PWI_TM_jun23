@@ -13,11 +13,13 @@ export default function Card({data}) {
     }
 
     return(
-        <div className="card bg-success border mb-2 p-2">
-            <img src={data.image} alt="imagen-personaje..."/>
-            <h3>{data.name}</h3>
-            <button className={show?"d-none":"d-block"} onClick={mostrarLista}>Know More..</button>
-           {show === true? <InfoCard status={data.status} genero={data.gender} especie={data.species} origen={data.origin.name} setShow={setShow}/>:''}
+        <div className="card bg-success border mb-2 p-2 d-flex flex-row gap-5">
+            <div>
+                <img src={data.image} alt="imagen-personaje..."/>
+                <h3>{data.name}</h3>
+                <button className={show?"d-none":"d-block"} onClick={mostrarLista}>Know More..</button>
+            </div>
+{show === true? <InfoCard status={data.status} genero={data.gender} especie={data.species} origen={data.origin.name} setShow={setShow}/>:''}
         </div>
     )
 }
