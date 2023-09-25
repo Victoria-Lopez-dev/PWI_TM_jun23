@@ -7,7 +7,6 @@ import Card from '../../components/Card/card'
 import Filter from '../../components/Filter/Filter'
 
 export default function Character() {
-    let [itemMenu]=useState("Characters");
     let [listaCompleta,setListaCompleta]=useState([]);//lista completa de todos los personajes que trae la API
     let [personajes,setPersonajes]=useState([]);//lista de personajes a reproducir en las tarjetas
     let [filtros]=useState([
@@ -104,7 +103,7 @@ export default function Character() {
 
     return(
         <Fragment>
-            <Nav  itemMenu={itemMenu}/>
+            <Nav  itemMenu={"Characters"}/>
             <section>
                 <h2>Filters</h2>
                <form className='d-flex gap-5 p-5 '>

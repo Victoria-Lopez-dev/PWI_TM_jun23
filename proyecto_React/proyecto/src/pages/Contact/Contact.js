@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 export default function Contact() {
     return(
         <Fragment>
-            <Nav itemMenu={"Characters"}/>
+            <Nav itemMenu={"Contact"}/>
             <main className='w-100 vh-100 d-flex align-items-center justify-content-center'>
             <section className='bg-primary w-75 m-5 p-5'>
                 <h2>Contact</h2>

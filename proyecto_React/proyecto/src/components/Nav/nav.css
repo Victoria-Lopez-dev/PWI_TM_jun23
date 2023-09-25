@@ -1,0 +1,8 @@
+.pepe{
+    background-color: blue;
+    
+}
+
+/* esto si no use bootstrap.
+creo una clase con las propiedades de como se ve el boton pulsado.
+y desde el js, con un operador ternario le digo si agrega esta clase o no*/
