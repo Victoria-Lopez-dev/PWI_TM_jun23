@@ -1,16 +1,10 @@
-//import Home from './pages/Home/Home';
-import Character from './pages/Characters/Characters';
-//import Contact from './pages/Contact/Contact';
+import Router from './router/Router';
 import './App.css';
-import { Fragment } from 'react';
 
 function App() {
   return (
-    <Fragment>
-      {/* <Home/>*/}
-     <Character/>  
-    {  /*<Contact/> */}
-    </Fragment>
+
+    <Router/>
 
   );
 }

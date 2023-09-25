@@ -1,4 +1,5 @@
 import './Home.css';
+import{ Link } from'react-router-dom';//traemos este componente del paquete para poder "linkear" a otro componente
 
 export default function Home() {
     return(
@@ -10,8 +11,8 @@ export default function Home() {
             In this website you can know information of the characters of this animated series.
             Also you can filter for diferent types of properties to find the character that you are looking for or send us a massage for any concern o sugestion</p>
             <h3>Lets go!</h3>
-            <button className='btn btn-danger p-2 me-2'>Charactes</button>
-            <button className='btn btn-danger p-2 me-2'>Contact</button>       
+            <Link to="/characters" className='btn btn-danger p-2 me-2'>Charactes</Link>
+            <Link to="/contact" className='btn btn-danger p-2 me-2'>Contact</Link>       
          </div>
     )
 }
